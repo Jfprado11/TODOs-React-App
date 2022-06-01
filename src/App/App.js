@@ -10,7 +10,7 @@ import { TodoSearch } from '../TodoSearch/TodoSearch';
 const todos = [
   { text: 'mobile first', completed: false },
   { text: 'intro a js', completed: false },
-  { text: 'practico de js', completed: false },
+  { text: 'practico de js', completed: true },
   { text: 'v8 curso', completed: false },
 ];
 
@@ -21,7 +21,7 @@ function App() {
       <TodoSearch />
       <TodoList>
         {todos.map((todo) => (
-          <TodoItem text={todo.text} key={todo.text} />
+          <TodoItem text={todo.text} key={todo.text} completed={todo.completed} />
         ))}
       </TodoList>
       <CreateTodoButton />
