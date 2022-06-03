@@ -22,8 +22,10 @@
 
   transform: rotate(0);
   transition: 0.4s ease;
+  z-index: 1;
 }
 
 .CreateTodoButton:hover {
   transform: rotate(180deg);
+  background-color: rgb(34, 158, 34);
 }

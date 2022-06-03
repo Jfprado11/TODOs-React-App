@@ -1,0 +1,79 @@
+form {
+  width: 90%;
+  max-width: 350px;
+  background-color: #f5f5f5;
+  padding: 33px 40px;
+  display: flex;
+  align-content: center;
+  flex-direction: column;
+}
+
+label {
+  text-align: center;
+  color: #141414;
+  font-weight: bold;
+  font-size: 22px;
+  margin-bottom: 26px;
+}
+
+textarea {
+  background-color: #f9fbfc;
+  border: 2px, solid #202329;
+  border-radius: 2px;
+  box-shadow: 0px 5px 50px rgba(32, 35, 41, 0.25);
+  color: #1e1e1f;
+  font-size: 20px;
+  text-align: center;
+  padding: 12px;
+  height: 96px;
+  width: calc(100%-25px);
+}
+
+textarea::placeholder {
+  color: #a5a5a5;
+  /* font-family: 'Montserrat'; */
+  font-weight: 400;
+}
+
+textarea:focus {
+  outline-color: #009ffd;
+}
+
+.TodoForm-btnContainer {
+  margin-top: 14px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.TodoForm-btn {
+  cursor: pointer;
+  display: inline-block;
+  font-size: 20px;
+  color: #202329;
+  font-weight: 400;
+  width: 120px;
+  height: 48px;
+  border-radius: 2px;
+  border: none;
+  /* font-family: 'Montserrat'; */
+  transition: background-color 0.3s ease;
+}
+
+.TodoForm-btn--add {
+  background-color: #61dafa;
+  box-shadow: 0px 5px 25px rgba(97, 218, 250, 0.5);
+}
+.TodoForm-btn--add:hover {
+  background-color: #009ffd;
+  box-shadow: 0px 5px 25px rgba(97, 218, 250, 0.5);
+}
+
+.TodoForm-btn--cancel {
+  background: transparent;
+}
+
+.TodoForm-btn--cancel:hover {
+  background-color: #dc2f18;
+}
